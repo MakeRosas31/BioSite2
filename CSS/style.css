@@ -1,0 +1,252 @@
+/* Resetting margins and padding for all elements */
+body, nav, main, footer {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+header {
+    background-image: url('../images/header.png'); /*Path to the image file*/
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+}
+
+/*Style rules for body and images*/
+body {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    line-height: 1.6;
+    max-width: 100%;
+    display: block;
+    background-image: url('../images/twisty.png'); /*Path to the image file*/
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+
+}
+
+.header-image {
+    background-size: cover; /*Ensures the image covers the entire container*/
+    width: 100%; /*Fill container width*/
+    height: auto;
+}
+
+/*Style rules for mobile viewport*/
+
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile {
+    display: none;
+}
+
+.tab-desk {
+    display: block;
+}
+
+
+/*Style rules for header area*/
+.mobile {
+    padding: 2%;
+    text-align: center;
+}
+
+.mobile h1 {
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Under fonts.google it says to use a weight value from 100 to 900*/
+.mobile h3 {
+    font-family: "Elms Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Style rules for navigation area*/
+nav {
+    background-color: #0692C4;
+    padding-top: 1px;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav a {
+    display: block;
+    color: #000000;
+    padding: 0.1em 1em;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*Style rules for main content*/
+
+main{
+    padding: 2%;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.round {
+    border-radius: 6px;
+    color:#000e8b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/*Google fonts says weight is 100-900*/
+.elms-sans> {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/*Style rules for main content on index page*/
+
+main {
+    padding: 2%;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+h3 {
+    padding-top: 2%;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*About Page*/
+div#info {
+    padding: 2%;
+}
+
+
+/*Style rules for footer content*/
+
+footer {
+    background-color: #0692C4;
+    color: #000000;
+    font-size: 0.85em;
+    text-align: center;
+    padding: 1% 0%;
+}
+
+
+/*Media Query for Tablet Viewport*/
+@media (min-width: 620px) {
+    /*Tablet viewport: Show tab-desk class, hide mobile class */
+    /*Tablet viewport: style rules for nav area*/
+    
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+        padding: 0.5em;
+    }
+    
+    main {
+        padding: 5%;
+    }
+    
+    #action {
+        font-size: 1.5em;
+    }
+}
+
+/*Media Query for Desktop Viewport*/
+@media (min-width: 1000px) {
+    /*Desktop viewport: Style rules for nav area*/
+    nav li {
+        font-size: 1.5em;
+    }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #fff6eb;
+        background-color: #000e8b;
+    }
+
+    /*Desktop viewport: Style rules for main content*/
+    #info ul {
+        margin-left: 5%;
+    }
+}
+
+/*Media Query for Large Desktop Viewport*/
+@media (min-width: 1921px) {
+    body {
+        background: linear-gradient(#f6eee4, #78593a);
+    }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        padding-top: 0.5em;
+        padding-left: 1.5em;
+    }
+
+    #wrapper {
+        width: 1920px;
+        margin-top: 0px;
+        margin-right: auto;
+    }
+
+    main {
+        background-color: #f6eee4;
+    }
+}
+
+/*Media Query for Print*/
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+}
