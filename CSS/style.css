@@ -10,6 +10,7 @@ header {
     color: rgb(255, 255, 255);
     padding: 20px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 /*Style rules for body and images*/
@@ -22,14 +23,29 @@ body {
     display: block;
     background-image: url('../images/twisty.png'); /*Path to the image file*/
     background-repeat: no-repeat;
-    background-position: 0 100%;
-
+    background-position: -100px 100%;
 }
 
 .header-image {
     background-size: cover; /*Ensures the image covers the entire container*/
     width: 100%; /*Fill container width*/
     height: auto;
+}
+
+#in-n-out {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#first-day {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
 }
 
 /*Style rules for mobile viewport*/
@@ -68,9 +84,8 @@ body {
 /*Style rules for navigation area*/
 nav {
     background-color: #0692C4;
-    padding-top: 1px;
-    padding-bottom: 0;
     text-align: center;
+    margin-top: -15px;
 }
 
 nav li {
@@ -82,8 +97,8 @@ nav li {
 
 nav a {
     display: block;
+    padding: 0.5em 1em;
     color: #000000;
-    padding: 0.1em 1em;
     text-decoration: none;
     text-align: center;
 }
@@ -97,6 +112,7 @@ main{
 
 main p {
     font-size: 1.25em;
+    padding-left: 2%;
 }
 
 main h3 {
@@ -115,9 +131,33 @@ main ul {
 
 .round {
     border-radius: 6px;
-    color:#000e8b;
+    color:#111538;
     text-decoration: none;
     font-weight: bold;
+}
+
+.states {
+    margin: 0;
+    padding: 0;
+}
+
+.states {
+    list-style-type: none;
+    position: relative;
+    padding-left: 30px; /*Space for image*/
+    padding-bottom: 30px; /*Space under list*/
+    background-image: url('/images/circle.png'); /*Path to the image file*/
+}
+
+.states::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px; /*Width of image*/
+    height: 20px; /*Height of image*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
@@ -164,11 +204,15 @@ div#info {
 /*Style rules for footer content*/
 
 footer {
+    /*position: fixed;*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5px;
     background-color: #0692C4;
     color: #000000;
-    font-size: 0.85em;
+    font-size: 0.75em;
     text-align: center;
-    padding: 1% 0%;
 }
 
 
@@ -209,8 +253,9 @@ footer {
     }
 
     nav li a:hover {
-        color: #fff6eb;
-        background-color: #000e8b;
+        color: #ffffff;
+        background-color: #111538;
+        border-radius: 15px;
     }
 
     /*Desktop viewport: Style rules for main content*/
@@ -222,7 +267,7 @@ footer {
 /*Media Query for Large Desktop Viewport*/
 @media (min-width: 1921px) {
     body {
-        background: linear-gradient(#f6eee4, #78593a);
+        background: linear-gradient(#ffffff, #000000);
     }
 
     nav li {
