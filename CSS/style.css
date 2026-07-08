@@ -21,9 +21,10 @@ body {
     line-height: 1.6;
     max-width: 100%;
     display: block;
-    background-image: url('../images/twisty.png'); /*Path to the image file*/
+    background-image: url('../images/twisty.png'), url('../images/bottomswoop.png'); /*First image on left*/
     background-repeat: no-repeat;
-    background-position: -100px 100%;
+    background-position: -110px 100%, 103% 100%;
+    background-size: auto, 38%;
 }
 
 .header-image {
@@ -33,18 +34,23 @@ body {
 }
 
 #in-n-out {
-    width: 100%;
-    height: auto;
+    width: 25%;
+    height: 50%;
     display: block;
-    margin: 0 auto;
+    margin-top: -30em;
+    margin-left: auto; /*Pushes it to the right*/
+    margin-right: 0;
+    margin-bottom: 1em;
     border-radius: 15px;
 }
 
 #first-day {
-    width: 100%;
-    height: auto;
+    width: 25%;
+    height: 50%;
     display: block;
-    margin: 0 auto;
+    margin-left: 44%; /*Pushes it to the right*/
+    margin-right: 0;
+    margin-top: -20em;
     border-radius: 15px;
 }
 
@@ -119,10 +125,6 @@ main h3 {
     padding-top: 2%;
 }
 
-main ul {
-    list-style-type: square;
-}
-
 .action {
     font-size: 1.75em;
     font-weight: bold;
@@ -136,6 +138,8 @@ main ul {
     font-weight: bold;
 }
 
+
+/*List Styles*/
 .states {
     margin: 0;
     padding: 0;
@@ -145,14 +149,14 @@ main ul {
     list-style-type: none;
     position: relative;
     padding-left: 30px; /*Space for image*/
-    padding-bottom: 30px; /*Space under list*/
     background-image: url('/images/circle.png'); /*Path to the image file*/
+    margin-left: 225px;
+    margin-right: 0;
 }
 
 .states::before {
     content: "";
     position: absolute;
-    left: 0;
     top: 5px;
     width: 20px; /*Width of image*/
     height: 20px; /*Height of image*/
@@ -181,12 +185,18 @@ p {
     font-size: 1.25em;
 }
 
-h3 {
-    padding-top: 2%;
+#under-list {
+    display: flex;
+    align-items: center;
+    max-width: 625px;
+    word-wrap: break-word; /*Break long words if needed*/
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
 }
 
-main ul {
-    list-style-type: square;
+h3 {
+    padding-top: 2%;
 }
 
 .action {
@@ -196,9 +206,6 @@ main ul {
 }
 
 /*About Page*/
-div#info {
-    padding: 2%;
-}
 
 
 /*Style rules for footer content*/
