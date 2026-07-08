@@ -166,7 +166,7 @@ main h3 {
 
 
 /*Google fonts says weight is 100-900*/
-.elms-sans> {
+.elms-sans {
   font-family: "Elms Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
